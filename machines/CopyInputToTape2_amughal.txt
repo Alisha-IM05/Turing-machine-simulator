@@ -1,4 +1,4 @@
-CopyInputToTape2_netid,2,100,1000
+CopyInputToTape2_amughal,2,100,1000
 0,1
 q0,qa,qr
 q0
