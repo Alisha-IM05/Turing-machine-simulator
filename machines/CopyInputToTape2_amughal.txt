@@ -1,0 +1,10 @@
+CopyInputToTape2_netid,2,100,1000
+0,1
+q0,qa,qr
+q0
+qa,qr
+0,1
+0,1
+q0,0,_,q0,0,0,R,R
+q0,1,_,q0,1,1,R,R
+q0,_,_,qa,_,_,S,S
