@@ -1,9 +1,9 @@
 Machine: EqualCount01_amughal
 
-Type
+Type: 
 Decider (2-tape)
 
-Language
+Language: 
 L = { w ∈ {0,1}* : w has equal number of 0s and 1s }
 
 Algorithm Overview
