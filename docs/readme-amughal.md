@@ -30,8 +30,10 @@ and executes each set of tape inputs.
 
 ## 5. Custom Machines
 I created two machines:
-1. A **decider** (“EndsWith1”) that accepts strings ending in `1`.
-2. A **2-tape computation** machine that copies input from tape 1 to tape 2.
+1. A **2-tape computation** machine that copies input from tape 1 to tape 2.
+2. A **2-tape decider** ("EqualCount01") that accepts binary strings with equal numbers of 0s and 1s.
+
+Details are in the per-machine documents.
 
 Details are in the per-machine documents.
 
