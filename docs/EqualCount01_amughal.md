@@ -1,42 +1,42 @@
 Machine: EqualCount01_amughal
+
 Type
 Decider (2-tape)
+
 Language
 L = { w ∈ {0,1}* : w has equal number of 0s and 1s }
+
 Algorithm Overview
 This 2-tape Turing machine uses a marking strategy:
 
-Mark all 0s: Scan input left-to-right, write 'X' on tape 2 for each '0'
-Cancel marks for 1s: Scan input again, erase one 'X' for each '1'
-Verify: Accept if tape 2 is empty; reject otherwise
+- Mark all 0s: Scan input left-to-right, write 'X' on tape 2 for each '0'
+= Cancel marks for 1s: Scan input again, erase one 'X' for each '1'
+= Verify: Accept if tape 2 is empty; reject otherwise
 
 State Descriptions
+
 q_scan0 (Initial state)
 Scans tape 1 from left to right:
-
-On '0': Write 'X' on tape 2, move both right
-On '1': Move tape 1 right only (no mark)
-On '_' (blank): Done counting 0s, transition to q_rewind1
+- On '0': Write 'X' on tape 2, move both right
+- On '1': Move tape 1 right only (no mark)
+- On '_' (blank): Done counting 0s, transition to q_rewind1
 
 q_rewind1
-Prepares to scan again by moving tape 2 to the left end:
-
-Immediately transitions to q_scan1
+ Prepares to scan again by moving tape 2 to the left end:
+- Immediately transitions to q_scan1
 
 q_scan1
 Moves tape 2 head to the leftmost position:
-
-Move tape 2 left while reading 'X' or '_'
-On '_' on tape 2: Reached the beginning, transition to q_check
+- Move tape 2 left while reading 'X' or '_'
+- On '_' on tape 2: Reached the beginning, transition to q_check
 
 q_check
 Scans tape 1 again and cancels marks:
-
-On '0' with 'X' on tape 2: Skip (move right on tape 1)
-On '0' with '_' on tape 2: Skip (move right on tape 1)
-On '1' with 'X' on tape 2: Erase the 'X', move both tapes right
-On '1' with '_' on tape 2: Reject (more 1s than 0s)
-On '_' on tape 1:
+- On '0' with 'X' on tape 2: Skip (move right on tape 1)
+- On '0' with '_' on tape 2: Skip (move right on tape 1)
+- On '1' with 'X' on tape 2: Erase the 'X', move both tapes right
+- On '1' with '_' on tape 2: Reject (more 1s than 0s)
+- On '_' on tape 1:
 
 If tape 2 has 'X': Reject (more 0s than 1s)
 If tape 2 has '_': Accept (equal count!)
