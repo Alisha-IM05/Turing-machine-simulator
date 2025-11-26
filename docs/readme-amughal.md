@@ -8,7 +8,7 @@ project specification including wildcards, stay moves, maximum tape length, maxi
 step count, and grouped tape initialization.
 
 ## 2. Time Spent
-Approximately 48 hours total.
+Approximately 3 days.
 
 ## 3. Code Description
 The main simulator is implemented in Python (`tm_amughal.py`). It reads a machine
