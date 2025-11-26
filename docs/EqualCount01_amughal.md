@@ -81,21 +81,6 @@ q_scan0: Immediately sees blank
 q_check: Both tapes empty
 → Accept ✓
 
-Testing
-Tape file: tapes/tapes-EqualCount01_amughal.txt
-Expected Results:
-
-Accept: ε (empty), 01, 0011, 1100, 010101, 100110
-Reject: 00110, 111000, 10... wait, "10" should accept!
-Let me recalculate: "10" has one 0 and one 1 → Accept
-Reject: 0, 1, 00110 (3 zeros, 2 ones), 111000 (3 ones, 3 zeros... that's equal!)
-
-Corrected Expected Results:
-
-Accept: ε, 01, 0011, 1100, 010101, 10, 111000, 100110
-Reject: 0, 1, 00110
-
-
 ## Implementation Notes:
 
 - Uses wildcards (*) for "don't care" symbols
