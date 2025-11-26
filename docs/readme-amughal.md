@@ -35,8 +35,6 @@ I created two machines:
 
 Details are in the per-machine documents.
 
-Details are in the per-machine documents.
-
 ## 6. Testing
 I ran:
 - My custom machines on their tape files
