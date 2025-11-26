@@ -1,19 +1,19 @@
-Machine: EqualCount01_amughal
+#Machine: EqualCount01_amughal
 
-Type: 
+##Type: 
 Decider (2-tape)
 
-Language: 
+##Language: 
 L = { w ∈ {0,1}* : w has equal number of 0s and 1s }
 
-Algorithm Overview
+##Algorithm Overview
 This 2-tape Turing machine uses a marking strategy:
 
 - Mark all 0s: Scan input left-to-right, write 'X' on tape 2 for each '0'
 = Cancel marks for 1s: Scan input again, erase one 'X' for each '1'
 = Verify: Accept if tape 2 is empty; reject otherwise
 
-State Descriptions
+##State Descriptions
 
 q_scan0 (Initial state)
 Scans tape 1 from left to right:
@@ -42,7 +42,8 @@ Scans tape 1 again and cancels marks:
 
 
 
-Example Traces
+##Example Traces
+
 Input: "01" → Accept
 
 q_scan0: 01_ → Tape2: X_ (marked the 0)
@@ -94,11 +95,10 @@ Corrected Expected Results:
 Accept: ε, 01, 0011, 1100, 010101, 10, 111000, 100110
 Reject: 0, 1, 00110
 
-Usage
-bashpython tm_amughal.py machines/EqualCount01_amughal.txt tapes/tapes-EqualCount01_amughal.txt
-Implementation Notes
 
-Uses wildcards (*) for "don't care" symbols
-Maximum tape length: 100 cells
-Maximum steps: 10,000
-Tape 2 alphabet: {X, _} where X is the marker
+##Implementation Notes:
+
+- Uses wildcards (*) for "don't care" symbols
+- Maximum tape length: 100 cells
+- Maximum steps: 10,000
+- Tape 2 alphabet: {X, _} where X is the marker
