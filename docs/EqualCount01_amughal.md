@@ -37,9 +37,8 @@ Scans tape 1 again and cancels marks:
 - On '1' with 'X' on tape 2: Erase the 'X', move both tapes right
 - On '1' with '_' on tape 2: Reject (more 1s than 0s)
 - On '_' on tape 1:
-
-If tape 2 has 'X': Reject (more 0s than 1s)
-If tape 2 has '_': Accept (equal count!)
+- If tape 2 has 'X': Reject (more 0s than 1s)
+- If tape 2 has '_': Accept (equal count!)
 
 
 
