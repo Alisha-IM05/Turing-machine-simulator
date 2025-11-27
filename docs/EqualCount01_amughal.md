@@ -83,6 +83,7 @@ q_check: Both tapes empty
 
 ## Testing
 Tape file: tapes/tapes-EqualCount01_amughal.txt
+
 Expected Results:
 
 Accept: ε (empty), 01, 0011, 0101, 111000, 1010, 00110, 100110
