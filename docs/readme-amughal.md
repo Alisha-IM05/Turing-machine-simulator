@@ -35,14 +35,14 @@ I created two machines:
 
 Details are in the per-machine documents.
 
-## Code Development Process
+## 6. Code Development Process
 This project was developed using Git/GitHub for version control. The development process involved:
 - Incremental testing with simple test cases first
 - Debugging the simulator with instructor-provided test machines
 - Iterative refinement of custom machine designs
 - Regular commits to track progress and allow rollback if needed
 
-## Key Data Structures
+## 7. Key Data Structures
 **Tapes**: Represented as Python lists of characters, with a fixed maximum length. Each tape is padded with blanks ('_') to the maximum length.
 
 **Tape Heads**: A list of integers tracking the current position (0-indexed) of each tape head.
@@ -61,7 +61,7 @@ This project was developed using Git/GitHub for version control. The development
 
 This structure allows O(1) lookup of all rules for a given state, with sequential matching for wildcard support.
 
-## 6. Testing
+## 8. Testing
 I ran:
 - My custom machines on their tape files
 - Instructor machines such as TM1d and TM1 (from Project_TM-v2.pdf)
