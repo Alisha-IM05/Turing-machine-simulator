@@ -1,0 +1,64 @@
+﻿1: q0,0,_,q0,0,0,R,R
+2: q0,1,_,q0,1,1,R,R
+3: q0,_,_,qa,_,_,S,S
+Loaded machine: CopyInputToTape2_amughal
+Tape file: tapes/tapes-CopyInputToTape2_amughal.txt
+
+Problem 1
+Tape 1: 0
+Tape 2: 
+0,1,0,0,q0,0,_,q0,0,0,R,R
+1,3,1,1,q0,_,_,qa,_,_,S,S
+Accepted
+Steps: 2
+Tape 1: 0
+Tape 2: 0
+
+Problem 2
+Tape 1: 101
+Tape 2: 
+0,2,0,0,q0,1,_,q0,1,1,R,R
+1,1,1,1,q0,0,_,q0,0,0,R,R
+2,2,2,2,q0,1,_,q0,1,1,R,R
+3,3,3,3,q0,_,_,qa,_,_,S,S
+Accepted
+Steps: 4
+Tape 1: 101
+Tape 2: 101
+
+Problem 3
+Tape 1: 00011
+Tape 2: 
+0,1,0,0,q0,0,_,q0,0,0,R,R
+1,1,1,1,q0,0,_,q0,0,0,R,R
+2,1,2,2,q0,0,_,q0,0,0,R,R
+3,2,3,3,q0,1,_,q0,1,1,R,R
+4,2,4,4,q0,1,_,q0,1,1,R,R
+5,3,5,5,q0,_,_,qa,_,_,S,S
+Accepted
+Steps: 6
+Tape 1: 00011
+Tape 2: 00011
+
+Problem 4
+Tape 1: 1
+Tape 2: 
+0,2,0,0,q0,1,_,q0,1,1,R,R
+1,3,1,1,q0,_,_,qa,_,_,S,S
+Accepted
+Steps: 2
+Tape 1: 1
+Tape 2: 1
+
+Problem 5
+Tape 1: 0011
+Tape 2: 
+0,1,0,0,q0,0,_,q0,0,0,R,R
+1,1,1,1,q0,0,_,q0,0,0,R,R
+2,2,2,2,q0,1,_,q0,1,1,R,R
+3,2,3,3,q0,1,_,q0,1,1,R,R
+4,3,4,4,q0,_,_,qa,_,_,S,S
+Accepted
+Steps: 5
+Tape 1: 0011
+Tape 2: 0011
