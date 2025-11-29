@@ -35,6 +35,32 @@ I created two machines:
 
 Details are in the per-machine documents.
 
+## Code Development Process
+This project was developed using Git/GitHub for version control. The development process involved:
+- Incremental testing with simple test cases first
+- Debugging the simulator with instructor-provided test machines
+- Iterative refinement of custom machine designs
+- Regular commits to track progress and allow rollback if needed
+
+## Key Data Structures
+**Tapes**: Represented as Python lists of characters, with a fixed maximum length. Each tape is padded with blanks ('_') to the maximum length.
+
+**Tape Heads**: A list of integers tracking the current position (0-indexed) of each tape head.
+
+**States**: Stored as a set of strings for validation.
+
+**Transitions**: Stored in a dictionary where:
+- Key: initial state name (string)
+- Value: list of transition dictionaries, each containing:
+  - `rule_num`: integer rule number for tracing
+  - `init_state`: initial state name
+  - `read`: tuple of symbols read from each tape
+  - `new_state`: next state name  
+  - `write`: tuple of symbols to write to each tape
+  - `dirs`: tuple of directions ('L', 'R', or 'S') for each head
+
+This structure allows O(1) lookup of all rules for a given state, with sequential matching for wildcard support.
+
 ## 6. Testing
 I ran:
 - My custom machines on their tape files
