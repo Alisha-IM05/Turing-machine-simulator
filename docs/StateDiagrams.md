@@ -87,10 +87,10 @@ Reads from Tape 1 and writes to Tape 2.
 # End-of-Input Behavior
 
 
-(_,_) → (_ , _) / S,S    → Balanced (0 zeros, 0 ones) → qa
-(_,0) → (_ , 0) / S,S    → Balanced (equal count)      → qa
-(_,*) → (_ , *) / S,S    → Not balanced                → qr
-* = any symbol except _ or 0.
+- (_,_) → (_ , _) / S,S    → Balanced (0 zeros, 0 ones) → qa
+- (_,0) → (_ , 0) / S,S    → Balanced (equal count)      → qa
+- (_,*) → (_ , *) / S,S    → Not balanced                → qr
+- * = any symbol except _ or 0.
 
 
 
